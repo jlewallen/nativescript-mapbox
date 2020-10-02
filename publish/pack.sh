@@ -37,10 +37,10 @@ pack() {
       cd ..
       echo 'Removing console.log() ...'
 
-      node_modules/remove-console-logs/remove-console-logs --io src/geo.utils.js  
-      node_modules/remove-console-logs/remove-console-logs --io src/mapbox.android.js  
-      node_modules/remove-console-logs/remove-console-logs --io src/mapbox.ios.js  
-      node_modules/remove-console-logs/remove-console-logs --io src/mapbox.common.js  
+      # node_modules/remove-console-logs/remove-console-logs --io src/geo.utils.js
+      # node_modules/remove-console-logs/remove-console-logs --io src/mapbox.android.js
+      # node_modules/remove-console-logs/remove-console-logs --io src/mapbox.ios.js
+      # node_modules/remove-console-logs/remove-console-logs --io src/mapbox.common.js
 
       cd "$TO_SOURCE_DIR"
 
