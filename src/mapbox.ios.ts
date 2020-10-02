@@ -3062,6 +3062,7 @@ const _addMarkers = (markers: MapboxMarker[], nativeMap?) => {
 * @link https://docs.nativescript.org/core-concepts/ios-runtime/how-to/ObjC-Subclassing#typescript-delegate-example
 */
 
+@NativeClass()
 class MGLMapViewDelegateImpl extends NSObject implements MGLMapViewDelegate {
   public static ObjCProtocols = [MGLMapViewDelegate];
 
@@ -3372,6 +3373,7 @@ class MGLMapViewDelegateImpl extends NSObject implements MGLMapViewDelegate {
 
 // --------------------------------------------------------------------------------------
 
+@NativeClass()
 class MapTapHandlerImpl extends NSObject {
   private _owner: WeakRef<Mapbox>;
   private _listener: (data: LatLng) => void;
@@ -3400,6 +3402,7 @@ class MapTapHandlerImpl extends NSObject {
   };
 }
 
+@NativeClass()
 class MapLongPressHandlerImpl extends NSObject {
   private _owner: WeakRef<Mapbox>;
   private _listener: (data?: LatLng) => void;
@@ -3433,6 +3436,7 @@ class MapLongPressHandlerImpl extends NSObject {
 * This is used by the OnScrollListener
 */
 
+@NativeClass()
 class MapPanHandlerImpl extends NSObject {
   private _owner: WeakRef<Mapbox>;
   private _listener: (data?: LatLng) => void;
@@ -3498,6 +3502,7 @@ class MapPanHandlerImpl extends NSObject {
 * Current unused
 */
 
+@NativeClass()
 class MapSwipeHandlerImpl extends NSObject {
   private _owner: WeakRef<Mapbox>;
   private _listener: (data?: LatLng) => void;
